@@ -25,7 +25,7 @@ jobs: # a collection of steps
           # Use "./gradlew test" instead if tests are not run in parallel
           command: |
             # Updated the current working directory
-            cd ~/test/edu/berkeley/aep
+            cd ~/aep2020/test/edu/berkeley/aep
             # Get list of classnames of tests that should run on this node
             CLASSNAMES=$(circleci tests glob "**/*.java" \
               | cut -c 1- | sed 's@/@.@g' \
